@@ -13,7 +13,8 @@
 # 使用教程
 
 1. 下载java 17及其以上的 jdk
-2. 在 `target` 下修改 application.yaml
+2. 运行sql 在release里
+3. 在 `target` 下修改 application.yaml
 ```yaml
 server:
   port: 8081
