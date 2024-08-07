@@ -19,7 +19,7 @@ aws:
   s3:
     s3Url: https://cn-sy1.rains3.com # S3服务器地址
     accessKey: p8CqGEJV1HvG9rwa # 账号key
-    secretKey: blPU5j7q6myniff0r0IoaHoSGw2Kma # 私钥
+    secretKey: xxxx # 私钥
 server:
   port: 8081
   baseUrl: http://localhost:5173
