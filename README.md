@@ -13,7 +13,21 @@
 # 使用教程
 
 1. 下载java 17及其以上的 jdk
-2. 在 `target` 下运行命令（需要先打包）
+2. 在 `target` 下修改 application.yaml
+```yaml
+server:
+  port: 8081
+  baseUrl: https://dev.webstack.zxbdwy.online # 你的webstack地址
+aws:
+  s3:
+    s3Url: https://cn-sy1.rains3.com # S3服务器地址
+    accessKey: xxxxx # 账号key
+    secretKey: xxxx # 私钥
+spring:
+  datasource:
+    url: jdbc:mysql://xxxx:3306/webstack-vue
+```
+3. 在 `target` 下运行命令（需要先打包）
 ```java
 java -jar webstack-backend-0.0.1-SNAPSHOT.jar
 ```
