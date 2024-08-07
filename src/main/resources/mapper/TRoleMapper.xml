@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zxb.webstackbackend.mp.mapper.TRoleMapper">
+
+    <resultMap id="BaseResultMap" type="com.zxb.webstackbackend.mp.pojo.TRole">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="roleName" column="role_name" jdbcType="CHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,role_name
+    </sql>
+</mapper>

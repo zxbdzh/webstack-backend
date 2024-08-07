@@ -1,0 +1,28 @@
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+  application:
+    name: webstack-backend
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: webstack-vue
+    password: TiKEdcY88HWesTJ3
+    url: jdbc:mysql://127.0.0.1:3306/webstack-vue
+  cache:
+    type: caffeine
+    caffeine:
+      spec: maximumSize=500,expireAfterAccess=600s
+
+aws:
+  s3:
+    s3Url: https://cn-sy1.rains3.com # S3服务器地址
+    accessKey: p8CqGEJV1HvG9rwa # 账号key
+    secretKey: blPU5j7q6myniff0r0IoaHoSGw2Kma # 私钥
+server:
+  port: 8081
+  baseUrl: http://localhost:5173
+logging:
+  level:
+    root: info
