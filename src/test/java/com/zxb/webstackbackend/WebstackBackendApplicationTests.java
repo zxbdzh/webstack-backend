@@ -29,8 +29,6 @@ import static com.zxb.webstackbackend.utils.BookmarkGenerator.saveToFile;
 class WebstackBackendApplicationTests {
     @Autowired
     private ResourceLoader resourceLoader;
-//    @Autowired
-//    private AmazonS3Config amazonS3Config;
 
     @Autowired
     private TLabelService tLabelService;
@@ -38,10 +36,6 @@ class WebstackBackendApplicationTests {
     @Autowired
     private TCategoryService tCategoryService;
 
-//    @Test
-//    void contextLoads() {
-//        tLabelService.update(new UpdateWrapper<TLabel>().eq("id", 1).set("name", "it-tools"));
-//    }
 
     @Test
     void tests() {
