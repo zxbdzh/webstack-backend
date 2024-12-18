@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: "000000"
+    url: jdbc:mysql://cn-qz-plc-1.ofalias.net:50240/webstack-vue

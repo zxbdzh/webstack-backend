@@ -91,7 +91,7 @@ public class UserController {
 
     @PutMapping("/updatePwd")
     public Result updatePwd(@RequestBody Map<String, String> params) {
-        // 1. 校验参数
+        // 1. 校验参r数
         String oldPwd = params.get("old_pwd");
         String newPwd = params.get("new_pwd");
         String rePwd = params.get("re_pwd");
