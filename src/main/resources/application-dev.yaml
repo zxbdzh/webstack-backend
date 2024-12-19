@@ -2,5 +2,10 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: "000000"
+    password: &fitCvNPc7bY
     url: jdbc:mysql://cn-qz-plc-1.ofalias.net:50240/webstack-vue
+aws:
+  s3:
+    s3Url: https://cn-sy1.rains3.com # S3服务器地址
+    accessKey: RrxEXxnHd5dF86ZC # 账号key
+    secretKey: mE24azvwamtpB12nV8g5ZZmEFj8Sh7 # 私钥
