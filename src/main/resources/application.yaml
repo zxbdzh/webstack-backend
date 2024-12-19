@@ -16,11 +16,7 @@ spring:
   profiles:
     active: dev
 
-aws:
-  s3:
-    s3Url: https://cn-sy1.rains3.com # S3服务器地址
-    accessKey: RrxEXxnHd5dF86ZC # 账号key
-    secretKey: mE24azvwamtpB12nV8g5ZZmEFj8Sh7 # 私钥
+
 server:
   port: 8081
   baseUrl: http://localhost:5173
