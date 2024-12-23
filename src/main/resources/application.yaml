@@ -16,7 +16,29 @@ spring:
   profiles:
     active: dev
 
+aws:
+  s3:
+    s3Url: https://ab.com # S3服务器地址
+    accessKey: xxxx # 账号key
+    secretKey: xxxx # 私钥
 
+springdoc:
+  swagger-ui:
+    tags-sorter: alpha
+  group-configs:
+    - group: bis
+      display-name: "业务接口文档"
+      paths-to-match: '/**'
+      packages-to-scan: com.zxb.webstackbackend.controller
+  default-flat-param-object: true
+knife4j:
+  # 开启增强配置
+  enable: true
+  # 开启生产环境屏蔽（如果是生产环境，需要把下面配置设置true）
+  #  production: true
+  setting:
+    language: zh-CN
+    swagger-model-name: 实体类列表
 server:
   port: 8081
   baseUrl: http://localhost:5173
