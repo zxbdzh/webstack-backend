@@ -3,6 +3,7 @@ package com.zxb.webstackbackend.mp.service.impl;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.zxb.webstackbackend.mp.mapper.TRoleMapper;
 import com.zxb.webstackbackend.mp.mapper.TUserMapper;
+import com.zxb.webstackbackend.mp.pojo.TRole;
 import com.zxb.webstackbackend.mp.pojo.TUser;
 import com.zxb.webstackbackend.mp.service.TRoleService;
 import com.zxb.webstackbackend.mp.service.TUserService;
@@ -11,7 +12,9 @@ import com.zxb.webstackbackend.utils.ThreadLocalUtil;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 /**
  * @author Administrator
@@ -96,6 +99,12 @@ public class TUserServiceImpl extends ServiceImpl<TUserMapper, TUser>
     public String findByRoleName(Integer id) {
         String desc = tRoleService.query().eq("id", id).select("role_name").one().getRoleName();
         return desc != null ? desc : "游客";
+    }
+
+    @Override
+    public List<TRole> getRoles() {
+        List<TRole> roles = tRoleService.query().select("id", "role_name").list();
+        return Optional.ofNullable(roles).orElse(List.of());
     }
 }
 

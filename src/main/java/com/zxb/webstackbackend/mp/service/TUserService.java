@@ -1,7 +1,10 @@
 package com.zxb.webstackbackend.mp.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.zxb.webstackbackend.mp.pojo.TRole;
 import com.zxb.webstackbackend.mp.pojo.TUser;
+
+import java.util.List;
 
 /**
  * @author Administrator
@@ -21,4 +24,5 @@ public interface TUserService extends IService<TUser> {
 
     String findByRoleName(Integer id);
 
+    List<TRole> getRoles();
 }

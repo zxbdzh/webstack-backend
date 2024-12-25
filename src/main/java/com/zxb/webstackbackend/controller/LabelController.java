@@ -22,7 +22,6 @@ public class LabelController {
 
     private final TLabelService tLabelService;
     private final TLabelMapper tLabelMapper;
-    Cache<String, String> cache = Caffeine.newBuilder().build();
 
 
     public LabelController(TLabelService tLabelService, TLabelMapper tLabelMapper) {
